@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>@ViewData["Title"] - Canara Bank</title>
+
+
+    <!-- Favicons -->
+    <link rel="icon" href="~/lib/assets/images/CanaraLogo.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/lib/niceadmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/niceadmin/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/niceadmin/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/niceadmin/vendor/quill/quill.snow.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/niceadmin/vendor/quill/quill.bubble.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/niceadmin/vendor/remixicon/remixicon.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/niceadmin/vendor/simple-datatables/style.css" rel="stylesheet" asp-append-version="true" />
+
+    <!-- Template Main CSS File -->
+    <link href="~/lib/niceadmin/css/style.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/niceadmin/css/custom.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/loader.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/progress-loading/css/circlos.css" rel="stylesheet" asp-append-version="true" />
+
+    <!--favicon-->
+    <link rel="icon" href="~/lib/assets/images/CanaraLogo.png" type="image/x-icon">
+    <!-- Bootstrap core CSS-->
+    <link href="~/lib/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link href="~/lib/assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS-->
+    <link href="~/lib/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- Custom Style-->
+    <link href="~/lib/assets/css/app-style.css" rel="stylesheet" />
+
+
+     <link href="~/lib/canarabank/home.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/canarabank/style_front.css" rel="stylesheet" asp-append-version="true" />
+    <style type="text/css">
+        #overlay {
+            position: fixed; /* Sit on top of the page content */
+            display: none; /* Hidden by default */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 100%; /* Full height (cover the whole page) */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+            z-index: 1999; /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer; /* Add a pointer on hover */
+        }
+
+    </style>
+
+</head>
+<body class="bg-theme bg-theme1 text-center">
+
+    <main id="main" class="main">
+        <section class="section dashboard">
+            @RenderBody()
+        </section>
+    </main>
+</body>
+    <!-- End #main -->
+    @*<!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Canara Bank</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Developed by <a href="#">Kaizen Secure Voiz</a>
+        </div>
+    </footer>
+    <!-- End Footer -->*@
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="overlay" style="display:none;"></div>
+    <div class="ui segment" id="Loader" style="display:none;">
+        <div class="ui active dimmer">
+            <div class="ui large text loader">Processing</div>
+        </div>
+        <p></p>
+    </div>
+  
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="~/lib/niceadmin/vendor/apexcharts/apexcharts.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/bootstrap/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/chart.js/chart.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/echarts/echarts.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/quill/quill.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/simple-datatables/simple-datatables.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/tinymce/tinymce.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/php-email-form/validate.js" asp-append-version="true"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/lib/niceadmin/js/main.js" asp-append-version="true"></script>
+
+    
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/Login/js/jquery.min.js"></script>
+<script src="~/lib/Login/js/popper.js"></script>
+<script src="~/lib/Login/js/bootstrap.min.js"></script>
+<script src="~/lib/Login/js/main.js"></script>
+
+<!-- Bootstrap core JavaScript-->
+<script src="~/lib/assets/js/jquery.min.js"></script>
+<script src="~/lib/assets/js/popper.min.js"></script>
+<script src="~/lib/assets/js/bootstrap.min.js"></script>
+
+<!-- sidebar-menu js -->
+<script src="~/lib/assets/js/sidebar-menu.js"></script>
+
+<!-- Custom scripts -->
+<script src="~/lib/assets/js/app-script.js"></script>
+<script src="~/lib/progress-loading/js/circlos.js"></script>
+
+
+<script src="~/lib/progress-loading/js/circlos.js" asp-append-version="true"></script>
+<script src="~/js/RecordRTC.js" asp-append-version="true"></script>
+<script src="~/js/sweetalert2.js" asp-append-version="true"></script>
+<script src="~/js/recorder.js" asp-append-version="true"></script>
+<script src="~/js/customTwo.js" asp-append-version="true"></script>
+<script src="~/js/custom.js" asp-append-version="true"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</html>

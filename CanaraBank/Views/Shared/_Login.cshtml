@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <title>@ViewData["Title"] - Canara Bank</title>
+
+   
+   
+    <!-- loader-->
+   @* <link href="~/lib/assets/css/pace.min.css" rel="stylesheet" />
+    <script src="~/lib/assets/js/pace.min.js"></script>*@
+    <!--favicon-->
+    <link rel="icon" href="~/lib/assets/images/CanaraLogo.png" type="image/x-icon">
+    <!-- Bootstrap core CSS-->
+    <link href="~/lib/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link href="~/lib/assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS-->
+    <link href="~/lib/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <!-- Custom Style-->
+    <link href="~/lib/assets/css/app-style.css" rel="stylesheet" />
+
+   <!-- Template Main CSS File -->
+    <link href="~/lib/niceadmin/css/custom.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/loader.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/progress-loading/css/circlos.css" rel="stylesheet" asp-append-version="true" />
+    
+    <link href="~/lib/canarabank/home.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/lib/canarabank/style_front.css" rel="stylesheet" asp-append-version="true" />
+  
+
+</head>
+<body class="bg-theme bg-theme1 ">
+    <div class="area">
+
+        <header class="main-header" >
+            <div class="header-top">
+                <div class="top-left clearfix">
+                    <div class="search-container">
+                        <form>
+                            <input id="srch" type="text" placeholder="Search" class="search" onblur="if(value=='') value='Search'" ;="" style="padding: 7px; background: #c3c3c3; margin: 0px; color: #868686;" onfocus="if(value=='Search') value='';">
+                            <button type="button" class="search-bu" onclick="javascript: open_search()" style="padding: 7px; color: #01a1dd;  margin: 0px; background: #c3c3c3; margin-left: -10px;"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="auto-container-fluid clearfix">
+                    <div class="top-right clearfix">
+                        <ul class="info-list clearfix">
+                            <li><a href="#"><span class="txt">Text Size:</span></a></li>
+                            <li style="margin: 0; margin-left: 10px;"><a href="javascript:void(0);" onclick="set_font_size('increase')"><span class="txt">A+</span></a></li>
+                            <li style="margin: 0; margin-left: 10px;"><a href="javascript:void(0);" onclick="set_font_size('')"><span class="txt">A</span></a></li>
+                            <li style="margin: 0; margin-left: 6px;"><a href="javascript:void(0);" onclick="set_font_size('decrease')"><span class="txt">A-</span></a></li>
+                            <li><span class="txt">|</span></li>
+                            <li><a href="#"><span class="txt">Color Theme:</span></a></li>
+                            <li style="margin: 0; margin-left: 10px;"><a class="dark" href="javascript:void(0);" title="Black Theme"><span class="txt"><img src="~/lib/canarabank/images/color-1.jpg" style="width: 15px;" alt="canara bank"></span></a></li>
+                            <li style="margin: 0; margin-left: 10px;"><a class="light" href="javascript:void(0);" title="Default Theme"><span class="txt"><img src="~/lib/canarabank/images/color-2.jpg" style="width: 15px;" alt="canara bank"></span></a></li>
+                            <li><a href="User_page.aspx?menulevel=5&amp;menuid=5&amp;CatID=14"><span class="txt">Screen Reader Access</span></a></li>
+                            <li>
+                                <div id="polyglotLanguageSwitcher">
+                                    <form action="#">
+                                        <select id="polyglot-language-options" style="padding: 0; margin: 0; background: #e7e7e7; border: 0px; color: #868585;" onchange="location = this.value;">
+                                            <option id="ENGLISH" value="/canara.aspx" selected="">English</option>
+                                            <option id="HINDI" value="/canaraH.aspx">हिंदी</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-upper bottom-blue">
+                <div class="inner-container">
+                    <div class="auto-container-fluid clearfix" style="background: #00adef;">
+                        <div class="logo-outer">
+                            <h1 class="logo"><a href="/"><img src="~/lib/canarabank/images/logo1.png"alt="canara" title=""></a></h1>
+                        </div>
+                        <div class="pull-right" style="max-width: 1002px;">
+                            <button class="navbar-toggler for-top-menu" type="button">
+                                <span class="icon flaticon-menu-button"></span>
+                            </button>
+                            <div id="bindmiss_topheading" class="nav-outer clearfix color top-links">
+                                <nav class="main-menu navbar-expand-md navbar-light">
+                                    <div><ul class="navigation clearfix menu-1"><li><a href="#">About Us</a>
+                                        <ul><li><a href="#">Board of Directors</a></li>
+                                            <li><a href="#">Chief Vigilance Officer Details</a></li></ul></li>
+                                            <li><a href="#">PMJDY and Financial Inclusions</a></li>
+                                            <li><a href="#">Press Release</a></li>
+                                            <li><a href="#">Tenders</a></li>
+                                            <li><a href="#">E Auction Properties</a></li>
+                                          
+                                        </ul></div></nav></div>
+                            <div class="nav-outer clearfix background-design" style="position:relative">
+                                <nav class="main-menu navbar-expand-md navbar-light">
+                                    <div class="navbar-header">
+                                        <div class="net"><a href="#">Net Banking</a></div>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="icon flaticon-menu-button"></span>
+                                        </button>
+                                    </div>
+
+                                    <div id="navbarSupportedContent" >  <ul class="navigation clearfix"><li class="dropdown menu-1"><span>
+                                        <a href="#">Personal Banking 
+                                        <img src="~/lib/canarabank/images/down-arrow.png" alt="canara" style="padding: 4px;"> 
+                                        </a></span><ul>
+                                            <li class="dropdown menu-1"></li><li>
+                                                <a href="#">Savings &amp; Deposits 
+                                                </a>
+                                            </li>
+                                            <li><a href="#">Technology Products </a></li>
+                                            <li><a href="#">Mutual Funds </a></li>
+                                            <li><a href="#">Insurance Business </a> </li>
+                                            <li><a href="#">International Services</a></li>
+                                            <li><a href="#">Card Services </a></li>
+                                            <li><a href="#">Consultancy Services </a></li>
+                                            <li><a href="#">Depository Services </a></li>
+                                            <li><a href="#">Ancillary Services </a></li>
+                                            <li><a href="#">Approved Housing Projects </a></li></ul></li>
+                                            
+                                            <li class="dropdown menu-1"><span>
+                                                <a href="#">Corporate Banking 
+                                                    <img src="~/lib/canarabank/images/down-arrow.png" alt="canara" style="padding: 4px;"> </a></span>
+                                                <ul><li class="dropdown menu-1"></li><li>
+                                                    <a href="#">Accounts &amp; Deposits </a></li>
+                                                    <li><a href="#">Supply Chain </a></li>
+                                                    <li><a href="#">Loans &amp; Advances </a></li>
+                                                    <li><a href="#">Syndication Services </a></li>
+                                                    <li><a href="#">IPO Monitoring Activity </a></li>
+                                                    <li><a href="#">Merchant Banking</a></li>
+                                                </ul>
+                                            </li>
+                                                
+                                            <li class="dropdown menu-1"><span>
+                                                <a href="#">Investor Relation 
+                                                    <img src="~/lib/canarabank/images/down-arrow.png" alt="canara" style="padding: 4px;"> </a></span>
+                                                <ul><li class="dropdown menu-1"></li>
+                                                    <li><a href="#">Contact Us </a></li>
+                                                    <li><a href="#">Appeal to Physical Shareholders of Canara Bank</a></li>
+                                                    <li><a href="#">SEBI’s ODR portal</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><span><a href="#">Canara Easy Fee</a></span></li>
+                                            <li class="dropdown menu-1"><span><a href="#">NRI Banking 
+                                                <img src="~/lib/canarabank/images/down-arrow.png" alt="canara" style="padding: 4px;"> </a></span>
+                                            <ul><li class="dropdown menu-1"></li>
+                                                <li><a href="#">Deposit Products </a></li>
+                                                <li><a href="#">Loans &amp; Advances </a></li>
+                                                <li><a href="#">Remittance Facilitiess </a></li>
+                                                <li><a href="#">Investment Facilities </a></li>
+                                            </ul></li>
+                                            
+                                            <li class="dropdown menu-1"><span><a href="#">Priority Portal 
+                                                <img src="~/lib/canarabank/images/down-arrow.png" alt="canara" style="padding: 4px;"> </a></span>
+                                            <ul><li class="dropdown menu-1"></li>
+                                                <li><a href="#">Schemes</a></li>
+                                                <li><a href="#">RRB Section </a></li>
+                                                <li><a href="#">Agri-Marketing </a></li>
+                                                <li><a href="#">Agricultural Innovation Centre</a></li>
+                                            </ul></li>
+                                            
+                                            <li><span><a href="#">Net Banking</a></span></li>
+                                            <li><span><a href="#">MSME Banking</a></span></li></ul></div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky-header">
+                <div class="header-upper bottom-blue">
+                    <div class="inner-container">
+                        <div class="auto-container-fluid clearfix" style="background: #00adef;">
+                            <div class="logo-outer">
+                                <div class="logo">
+                                    <a href="./">
+                                        <img src="~/lib/canarabank/images/logo1.png" alt="canara bank" title="canara bank">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="bindmiss_topstickyheading" class="nav-outer clearfix color top-links"><nav class="main-menu navbar-expand-md navbar-light"><div><ul class="navigation clearfix menu-1"><li><a href="About-Us.aspx">About Us</a><ul><li><a href="/bod.aspx">Board of Directors</a></li><li><a href="https://canarabank.com/User_page.aspx?nid=42">Chief Vigilance Officer Details</a></li></ul></li><li><a href="User_page.aspx?othlink=106">Financial Results</a></li><li><a href="User_page.aspx?fid=10">PMJDY and Financial Inclusions</a></li><li><a href="User_page.aspx?cid=109">Press Release</a></li><li><a href="../tenders.aspx">Tenders</a></li><li><a href="https://canarabank.com/property/user/propertyDisplay.aspx">E Auction Properties</a></li><li><a href="User_page.aspx?fid=15">Announcements</a></li><li><a href="https://canarabank.com/User_page.aspx?cid=115">Ex-employees</a></li><li><a href="User_page.aspx?fid=16">Careers</a></li></ul></div></nav></div>
+                            <div class="nav-outer clearfix background-design">
+                                <nav class="main-menu navbar-expand-md navbar-light">
+                                    <div class="navbar-header">
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="icon flaticon-menu-button"></span>
+                                        </button>
+                                    </div>
+                                    <div id="navbarSupportedContent11" class="collapse navbar-collapse clearfix">  <ul class="navigation clearfix"><li class="dropdown menu-1"><span><a href="User_page.aspx?menulevel=1&amp;menuid=1&amp;CatID=1">Personal Banking <img src="~/lib/canarabank/images/down-arrow.png" alt="canara" style="padding: 4px;"> </a></span><ul><li class="dropdown menu-1"></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=1"><i class="topicons icon-saving_icon" width="136" height="67"> </i>Savings &amp; Deposits </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=3"><i class="topicons icon-tech_icon" width="136" height="67"> </i>Technology Products </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=4"><i class="topicons icon-mutual_fund_icon" width="136" height="67"> </i>Mutual Funds </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=5"><i class="topicons icon-insurance_icon" width="136" height="67"> </i>Insurance Business </a></li><li><a href="/UPLOAD/TopMenuFile/International_services.pdf">International Services</a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=7"><i class="topicons icon-card_icon" width="136" height="67"> </i>Card Services </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=8"><i class="topicons icon-consultancy_icon" width="136" height="67"> </i>Consultancy Services </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=9"><i class="topicons icon-home_icon" width="136" height="67"> </i>Depository Services </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=10"><i class="topicons icon-list_icon" width="136" height="67"> </i>Ancillary Services </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=11"><i class="topicons icon-housing_project_icon" width="136" height="67"> </i>Approved Housing Projects </a></li><li><a href=""><i class="topicons " width="136" height="67"> </i></a><a href="https://canarabank.com/User_page.aspx?othlink=410" target="_blank">How To Apply</a> </li><li> <a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=2"><i class="topicons topicons icon-15" width="136" height="67"> </i>Retail Loan Products</a></li><li> <a href="User_page.aspx?menulevel=1&amp;menuid=3&amp;CatID=156"><i class="topicons topicons icon-15" width="136" height="67"> </i>MSME Loan Products</a></li><li> <a href="https://canarabankcsis.in/DCS_WEB/"><i class="topicons " width="136" height="67"> </i>ONLINE SUBMISSION OF DEATH CLAIMS</a></li><li> <a href="#"><i class="topicons " width="136" height="67"> </i>ONLINE SUBMISSION OF 15G/15H APPLICATION</a></li></ul></li><li class="dropdown menu-1"><span><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=12">Corporate Banking <img src="~/lib/canarabank/images/down-arrow.png" alt="canara" style="padding: 4px;"> </a></span><ul><li class="dropdown menu-1"></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=12"><i class="topicons icon-saving_icon" width="136" height="67"> </i>Accounts &amp; Deposits </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=13"><i class="topicons icon-supply_chain_icon" width="136" height="67"> </i>Supply Chain </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=14"><i class="topicons icon-15" width="136" height="67"> </i>Loans &amp; Advances </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=15"><i class="topicons icon-other_services_icon" width="136" height="67"> </i>Syndication Services </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=16"><i class="topicons icon-ipo_icon" width="136" height="67"> </i>IPO Monitoring Activity </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=17"><i class="topicons icon-lead_bank_icon" width="136" height="67"> </i>Merchant Banking</a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=18"><i class="topicons icon-tuf_icon" width="136" height="67"> </i>TUF Schemes</a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=19"><i class="topicons icon-tax_icon" width="136" height="67"> </i>Canara eTax </a></li></ul></li><li class="dropdown menu-1"><span><a href="User_page.aspx?menulevel=1&amp;menuid=1&amp;CatID=11">Investor Relation <img src="~/lib/canarabank/images/down-arrow.png" alt="canara" style="padding: 4px;"> </a></span><ul><li class="dropdown menu-1"></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=54"><i class="topicons icon-support_icon" width="136" height="67"> </i>Contact Us </a></li><li><a href="/UPLOAD/TopMenuFile/Digital_Media.pdf">Appeal to Physical Shareholders of Canara Bank</a></li><li> <a href="https://ris.kfintech.com/clientservices/tds/"><i class="topicons " width="136" height="67"> </i>Download TDS Certificate for payment of Dividend FY 2021-22 </a></li><li> <a 0000href="#"><i class="topicons " width="136" height="67"> </i>SEBI’s ODR portal</a></li></ul></li><li><span><a href="#">Canara Easy Fee</a></span></li><li class="dropdown menu-1"><span><a href="#">NRI Banking <img src="~/lib/canarabank/images/down-arrow.png" alt="canara" style="padding: 4px;"> </a></span><ul><li class="dropdown menu-1"></li><li><a href="#"><i class="topicons icon-saving_icon" width="136" height="67"> </i>Deposit Products </a></li><li><a href="#"><i class="topicons icon-15" width="136" height="67"> </i>Loans &amp; Advances </a></li><li><a href="#"><i class="topicons icon-rupee_arrow_icon" width="136" height="67"> </i>Remittance Facilities </a></li><li><a href="#"><i class="topicons icon-iinnvestinvest_icon" width="136" height="67"> </i>Investment Facilities </a></li><li><a href="#"><i class="topicons icon-consultancy_icon" width="136" height="67"> </i>Consultancy Services </a></li><li><a href="#"><i class="topicons icon-other_services_icon" width="136" height="67"> </i>Other Services </a></li><li><a href="#"><i class="topicons icon-list_1_icon" width="136" height="67"> </i>NRI News Bulletin</a></li><li><a href="#"><i class="topicons icon-phone_icon" width="136" height="67"> </i>Contact Details</a></li><li><a href="#"><i class="topicons icon-faq_icon" width="136" height="67"> </i>FAQs </a></li><li><a href="#"><i class="topicons icon-list_1_icon" width="136" height="67"> </i>FATCA / CRS - Self Declaration Form </a></li><li> <a href="#"><i class="topicons " width="136" height="67"> </i>Callback Request</a></li></ul></li><li class="dropdown menu-1"><span><a href="#">Priority Portal <img src="~/lib/canarabank/images/down-arrow.png" alt="canara" style="padding: 4px;"> </a></span><ul><li class="dropdown menu-1"></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=30"><i class="topicons icon-tuf_icon" width="136" height="67"> </i>Schemes</a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=31"><i class="topicons icon-train_icon" width="136" height="67"> </i>RRB Section </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=32"><i class="topicons icon-sustainable_icon" width="136" height="67"> </i>Agri-Marketing </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=33"><i class="topicons icon-sustainable_icon" width="136" height="67"> </i>Agricultural Innovation Centre</a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=34"><i class="topicons  icon-faq_icon" width="136" height="67"> </i>Rural Development </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=35"><i class="topicons icon-ced_icon" width="136" height="67"> </i>CED for Women </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=36"><i class="topicons icon-iinnvestinvest_icon" width="136" height="67"> </i>Sustainable Development and Corporate Social Responsibility (SD-CSR) </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=37"><i class="topicons icon-lead_bank_icon" width="136" height="67"> </i>Lead Bank </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=38"><i class="topicons icon-promotion_icon" width="136" height="67"> </i>In Promotion Of Self Employment </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=39"><i class="topicons icon-tuf_icon" width="136" height="67"> </i>RURAL DEVELOPMENT SCHEMES </a></li><li><a href="User_page.aspx?menulevel=1&amp;menuid=2&amp;CatID=40"><i class="topicons icon-support_icon" width="136" height="67"> </i>SUPPORT INITIATIVES </a></li><li> <a href="User_page.aspx?othlink=430/"><i class="topicons " width="136" height="67"> </i>Agriculture loan Application formats</a></li></ul></li><li><span><a href="../NET_Banking.aspx">Net Banking</a></span></li><li><span><a href="http://canaramsme.in/">MSME Banking</a></span></li><li><span><a href="https://canarabank.net.in/cpgrs/login.aspx">Register a Grievance</a></span></li></ul></div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+   @* <header id="header" class="header d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content: centered">
+            <a asp-controller="Home" asp-action="Login" class="logo d-flex align-items-center">
+                <img src="~/lib/assets/images/cropped-Kaizenvoiz-logo.png" alt="logo" style="max-height:100px;">
+            </a>
+        </div>
+        <div class="search-bar" style="padding-left: 55%;">
+            
+        </div>*@
+       
+       
+ @*       <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+                <li class="nav-item">
+                </li>
+                
+                <li class="nav-item">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li class="nav-item pe-9">
+                  
+                </li>
+            </ul>
+        </nav>*@
+   
+   
+       
+    
+    <main id="main" class="main mt-0">
+        <section class="section dashboard">
+            @RenderBody()
+        </section>
+    </main>
+    <!--Footer-->
+    <footer class="main-footer">
+            <div class="auto-container" style="margin-top: 73px;">
+                <div id="divFooterservice" class="widgets-section"><div class="row clearfix"><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Complaints</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Customer Education</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Regulatory Disclosures</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">RTI Act</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Regulations</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Browser Compatibility</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Disclaimer</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Screen Reader Accessibility</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Sitemap</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Official Language</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Photo Gallery</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Copyright Policy</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Hyperlink Policy</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Terms and Conditions</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Privacy Policy</a></li></ul></div></div><div class="footer-column col-lg-3 col-md-12 col-sm-12"><div class="footer-widget services-widget"><ul class="footer-service-list"><li><a href="#">Website Security Policy</a></li></ul></div></div></div></div>
+                <div class="marketTiker">
+                <iframe src="https://content.dionglobal.in/canarabank/"></iframe> 
+				<p><span id="last_updated">Last Updated on:</span><span style="color:#f57e42;"><strong>&nbsp;
+                    <span id="Label33">25/09/2023</span>&nbsp;</strong></span>
+                    <span><span id="last_lable">|</span></span>
+				<span><span id="last_lable2">|</span></span><span>&nbsp;&nbsp;&nbsp; <span id="total_vi_april21">Total Visitors(01/04/2021 to Now) :</span></span><span style="color:#f57e42;"><strong>  <span id="Visitor_april21">149748162</span></strong></span>
+				
+				<span><span id="last_lable3">|</span></span><span>&nbsp;&nbsp;&nbsp; <span id="today_visitors_name">Today Visitors:</span></span><span style="color:#f57e42;"><strong>  <span id="today_visitors_value">76868</span></strong></span>
+				
+				</p>
+		     
+    
+                            
+			</div>	
+        </div></footer>
+        <div class="container-fluid" style="padding: 10px; text-align: center; background: #0088c3; color: #fff;">
+            <div class="footer-bottom">
+                <div class="clearfix">
+                    <div class="">
+                        <div class="copyright">© 2019, Canara Bank. All rights reserved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Footer Ends-->
+    <!-- End #main -->
+   
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="overlay" style="display:none;"></div>
+    <div class="ui segment" id="Loader" style="display:none;">
+        <div class="ui active dimmer">
+            <div class="ui large text loader">Processing</div>
+        </div>
+        <p></p>
+    </div>
+
+  </div>
+
+    <!-- Vendor JS Files -->
+    <script src="~/lib/niceadmin/vendor/apexcharts/apexcharts.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/bootstrap/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/chart.js/chart.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/echarts/echarts.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/quill/quill.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/simple-datatables/simple-datatables.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/tinymce/tinymce.min.js" asp-append-version="true"></script>
+    <script src="~/lib/niceadmin/vendor/php-email-form/validate.js" asp-append-version="true"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/lib/niceadmin/js/main.js" asp-append-version="true"></script>
+
+    <!-- Recording JS File -->
+    <script src="~/js/custom.js" asp-append-version="true"></script>
+    <script src="~/lib/progress-loading/js/circlos.js" asp-append-version="true"></script>
+    <script src="~/js/RecordRTC.js" asp-append-version="true"></script>
+    <script src="~/js/sweetalert2.js" asp-append-version="true"></script>
+    <script src="~/js/recorder.js" asp-append-version="true"></script>
+    @*<script src="~/lib/recorder.js/js/app.js" asp-append-version="true"></script>*@
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/lib/assets/js/jquery.min.js"></script>
+    <script src="~/lib/assets/js/popper.min.js"></script>
+    <script src="~/lib/assets/js/bootstrap.min.js"></script>
+
+    <!-- sidebar-menu js -->
+    <script src="~/lib/assets/js/sidebar-menu.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="~/lib/assets/js/app-script.js"></script>   
+    <script src="~/lib/progress-loading/js/circlos.js"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

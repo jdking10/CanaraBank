@@ -1,0 +1,137 @@
+﻿@model CanaraBank.Models.LoginModel
+
+@{
+	ViewData["Title"] = "Login Page";
+	ViewData["Title"] = "Login";
+	Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	@*<link rel="stylesheet" href="~/lib/Login/css/style.css">*@
+  
+</head>
+<body class="bg-theme bg-theme1 text-center">
+	<!--<div class="text-center">-->
+
+		
+	<!-- Start wrapper-->
+		
+		<div id="wrapper">
+
+			<div class="loader-wrapper"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+			<div class="card card-authentication1 mx-auto my-5" style="margin-top: 111px">
+				<div class="card-body">
+					<div class="card-content p-2">
+						<div class="text-center">
+							<img src="~/lib/assets/images/Kaizenvoiz-logo.png" alt="logo icon">
+						</div>
+					<div class="card-title text-uppercase text-center py-3" style="color: #1f57a4;">Sign In</div>
+					<form asp-controller="Home" asp-action="Login" class="signin-form needs-validation" novalidate>
+
+						<div class="form-group mb-3">
+							<div>
+								<div  style="color: #1f57a4;">User ID</div>
+								<div class="input-group has-validation">
+									
+									<input type="text" name="UserId" class="form-control numberonly" asp-for="UserId" id="txtUserID"  style="color: #1f57a4;" required>
+									<span asp-validation-for="UserId" class="invalid-feedback">Please enter your userid.</span>
+								
+								</div>
+							</div>
+						</div>
+
+
+						@*<div class="form-group mb-3">
+							<div class="input-group has-validation">
+								<div class="form-control-position">
+									<i class="icon-lock"></i>
+								</div>								
+								<input type="password" name="password" class="form-control" asp-for="Password" id="txtPassword" placeholder="Password" required>
+								<span asp-validation-for="Password" class="invalid-feedback">Please enter your password!</span>
+							</div>
+						</div>*@
+
+
+
+						<div class="form-group d-md-flex">
+							<div class="w-100">
+								<div class="col-md-11 col-lg-10">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" name="remember" value="true" required id="rememberMe"style="margin-top: 18px;">
+										<label class="form-check-label" for="rememberMe" style="margin-left: 23px;margin-top: -28px;">
+											I agree and accept to the Bank's
+											<span class="text-primary">Terms &amp; Conditions</span>.
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<button type="submit" class="form-control btn btn-primary rounded submit">Login</button>
+						</div>
+					</form>
+				</div>
+				</div>
+			</div>
+		
+			<!--Start Back To Top Button-->
+			<a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+			<!--End Back To Top Button-->
+			
+		</div><!--wrapper-->
+
+
+	<nav class="navbar navbar-light border-bottom d-none d-md-block d-lg-block">
+		<section class="services-section" style="margin-top: 141px;">
+			<div id="ContentPlaceHolder1_bind_servicesection" class="auto-container">
+				<div class="row clearfix">
+					<div id="1" class="services-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="big-icon flaticon-settings-4"></div><div class="icon-box"><img src="~/lib/canarabank/images/icon-1.png" alt="canara bank"></div><h3>
+								<a class="boxlink" href="#">
+									<br>
+								</a><a href="#">Get Instant Loan Approval </a> <br>
+							</h3><a class="arrow"><span class="icon flaticon-next"></span></a>
+						</div>
+					</div><div id="2" class="services-block col-xl-3 col-lg-6 col-md-6 col-sm-12"><div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms"><div class="big-icon flaticon-settings-4"></div><div class="icon-box"><img src="~/lib/canarabank/images/icon-1.png" alt="canara bank"></div><h3><a class="boxlink" href="#"><br>Card Services</a></h3><a class="arrow"><span class="icon flaticon-next"></span></a></div></div><div id="3" class="services-block col-xl-3 col-lg-6 col-md-6 col-sm-12"><div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms"><div class="big-icon flaticon-settings-4"></div><div class="icon-box"><img src="~/lib/canarabank/images/icon-1.png" alt="canara bank"></div><h3><a href="#"><br>Quick Access</a></h3><a class="arrow"><span class="icon flaticon-next"></span></a></div></div><div id="4" class="services-block col-xl-3 col-lg-6 col-md-6 col-sm-12"><div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms"><div class="big-icon flaticon-settings-4"></div><div class="icon-box"><img src="~/lib/canarabank/images/icon-1.png" alt="canara bank"></div><h3><a href="#"></a><a href="#">Canara Diya Online SB Account Opening</a></h3><a class="arrow"><span class="icon flaticon-next"></span></a></div></div>
+				</div>
+			</div>
+		</section>
+	</nav>
+		<div class="d-none d-md-block d-lg-block col-md-1">
+		</div>
+		<div class="d-none d-md-block d-lg-block col-md-5">
+			<div class="row"></div>
+		</div>
+	
+
+
+	<!-- Bootstrap core JavaScript-->
+	<script src="~/lib/assets/js/jquery.min.js"></script>
+	<script src="~/lib/assets/js/popper.min.js"></script>
+	<script src="~/lib/assets/js/bootstrap.min.js"></script>
+
+	<!-- sidebar-menu js -->
+	<script src="~/lib/assets/js/sidebar-menu.js"></script>
+
+	<!-- Custom scripts -->
+	<script src="~/lib/assets/js/app-script.js"></script>
+
+
+
+</body>
+</html>
+
+

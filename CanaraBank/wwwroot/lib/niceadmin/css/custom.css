@@ -1,0 +1,30 @@
+﻿
+.mic-btn, .mic-btn::after, .mic-btn:before {
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.blink {
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.cdev {
+    z-index: 900;
+}
+
+    .cdev button {
+        z-index: 910;
+        position: absolute;
+    }
+
+    .cdev img {
+        margin-left: 19%;
+        margin-top: 27%;
+    }

@@ -1,0 +1,43 @@
+﻿
+<div class="card mb-2" id="CardLogin">
+    <div class="card-body py-3">
+        @if (TempData["UserType"] != null)
+
+        {
+            <h5 class="card-title text-center">Record your voice by saying anything like reading the text below</h5>
+
+            <div class="row justify-content-center">
+                <div class="col-md-12 pb-2 text-center mt-1">
+                    <div class="cdev" data-percent="100" data-duration="20000" data-color="#bdc3c7,#03A9F4">
+                        <button id="btnMicOff" onclick="stopRecording();" title="Turn Off" class="mic-btn" style="display:none;"><img id="imgMicrophone" alt="Microphone" src="~/lib/niceadmin/img/mic-off.png" /></button>
+                        <button id="btnMicOn" onclick="startRecording();" title="Turn On" class="mic-btn"><img id="imgMicrophone" alt="Microphone" src="~/lib/niceadmin/img/mic-on.png" /></button>
+                    </div>
+                    <br />
+                </div>
+                <br />
+                <div class="col-12 text-justify" style="text-align:justify;">
+
+                    @if (TempData["UserType"].ToString() == "Verification")
+                    {
+                        <p style="line-height: 2;">
+                            Kaizen Secure Voiz (KSV) is a voice biometric authentication & verification tool, that does away with the need for people to remember password or pin etc. Their voice becomes their identity. It is cheapest among biometric technology, as it does not need any readers or special devices when compared to fingerprint or IRIS or any other biometric tool. KSV is language independent and text independent VA tool.
+                        </p>
+                    }
+                    else
+                    {
+                        <p style="line-height: 2;">
+                            Kaizen Secure Voiz (KSV) is a voice biometric authentication & verification tool, that does away with the need for people to remember password or pin etc. Their voice becomes their identity. It is cheapest among biometric technology, as it does not need any readers or special devices when compared to fingerprint or IRIS or any other biometric tool. KSV is language independent and text independent VA tool.
+                        </p>
+                    }
+
+
+                    @Html.Hidden("hdn_UserType", TempData["UserType"])
+                    @Html.Hidden("hdn_UniqueId", TempData["UniqueId"])
+                    @Html.Hidden("hdn_FromLayout", TempData["From"])
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
